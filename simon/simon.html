@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="../simon/simon.css">
+    <script src="../simon/simon.js"></script>
+
+    <script src="https://kit.fontawesome.com/6c9ee3040f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <button class="go-back"><i class="fa-solid fa-circle-chevron-left"></i></button>
+  
+    <style>
+        .go-back {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .go-back i {
+            color: #6A6BA4;
+        }
+
+        .go-back i:hover {
+            cursor: pointer;
+            color: #2A2B4A;
+        }
+    </style>
+
+    <script>
+        document.querySelector(".go-back").addEventListener("click", () => {
+            location.href = "../freeCodeCamp.php";
+        });
+    </script>
+
+    <div id='game-container'>
+        <div id='color-pads'>
+            <div class ='color-pad-1' id='green'></div>
+            <div class ='color-pad-2' id='red'></div>
+            <div class ='color-pad-3' id='yellow'></div>
+            <div class ='color-pad-4' id='blue'></div>
+        </div>
+    
+        <div id='btn-pad'>
+            <div id='strict-btn-display'></div>
+    
+            <h1>Simon<div class='trademark'>®</div></h1>
+            <div id='count'></div>
+            <button id='start-btn'></button>
+            <button id='strict-btn'></button>
+    
+            <label id='count-label'>COUNT</label>
+            <label id='start-btn-label'>START</label>
+            <label id='strict-btn-label'>STRICT</label>
+    
+            <div id='power-btn-container'>
+                <button id='power-btn'></button>
+            </div>
+            <label id='power-btn-label-off'>OFF</label>
+            <label id='power-btn-label-on'>ON</label>
+        </div>
+    </div>
+    
+</body>
+</html>

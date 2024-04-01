@@ -1,0 +1,202 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	user-select: none;
+}
+
+#game-container {
+	position: absolute;
+	left: 0;
+	margin-left: 50vw;
+	margin-top: 4rem;
+	padding-bottom: 4rem;
+	transform: translate(-50%, 0);
+}
+
+#color-pads {
+	display: flex;
+	flex-wrap: wrap;
+	width: 32rem;
+	box-shadow: 0 0 0.5rem black;
+	border-radius: 50%;
+}
+
+#green {
+	background-color: #4E9D4D;
+	width: 16rem;
+	height: 16rem;
+	border-radius: 100% 0 0 0;
+	border-left: 1.5rem solid #424242;
+	border-top: 1.5rem solid #424242;
+	border-right: 0.75rem solid #424242;
+	border-bottom: 0.75rem solid #424242;
+	cursor: pointer;
+}
+
+#red {
+	background-color: #A22323;
+	width: 16rem;
+	height: 16rem;
+	border-radius: 0 100% 0 0;
+	border-right: 1.5rem solid #424242;
+	border-top: 1.5rem solid #424242;
+	border-left: 0.75rem solid #424242;
+	border-bottom: 0.75rem solid #424242;
+	cursor: pointer;
+}
+
+#yellow {
+	background-color: #C6A42D;
+	width: 16rem;
+	height: 16rem;
+	border-radius: 0 0 0 100%;
+	border-left: 1.5rem solid #424242;
+	border-bottom: 1.5rem solid #424242;
+	border-right: 0.75rem solid #424242;
+	border-top: 0.75rem solid #424242;
+	cursor: pointer;
+}
+
+#blue {
+	background-color: #2E4995;
+	width: 16rem;
+	height: 16rem;
+	border-radius: 0 0 100% 0;
+	border-right: 1.5rem solid #424242;
+	border-bottom: 1.5rem solid #424242;
+	border-left: 0.75rem solid #424242;
+	border-top: 0.75rem solid #424242;
+	cursor: pointer;
+}
+
+#btn-pad {
+	position: absolute;
+	width: 16rem;
+	height: 16rem;
+	background-color: #C8C8C8;
+	text-align: center;
+	border-radius: 50%;
+	border: 0.75rem solid #424242;
+	margin-top: -24rem;
+	margin-left: 8rem;
+}
+
+#btn-pad div, #btn-pad button, #btn-pad label, #btn-pad h1 {
+	position: absolute;
+}
+
+#strict-btn-display {
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: #471313;
+	border-radius: 50%;
+	border: 0.1rem solid #424242;
+}
+
+#btn-pad h1 {
+	font-size: 3.2rem;
+	font-weight: 800;
+	margin-left: 1.5rem;
+	color: #424242;
+}
+
+.trademark {
+	font-size: 1rem;
+	margin-left: 10.5rem;
+	margin-top: -3.5rem;
+}
+
+#count {
+	height: 2.5rem;
+	width: 4rem;
+	background-color: #471313;
+	border-radius: 0.5rem;
+	border: 0.2rem solid #424242;
+	margin-left: 1.5rem;
+	margin-top: 7rem;
+	color: #8E2626;
+	font-size: 1.8rem;
+}
+
+#start-btn {
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: #C51E1E;
+	border: 0.2rem solid #424242;
+	border-radius: 50%;
+	margin-top: 7.5rem;
+	margin-left: -0.75rem;
+	cursor: pointer;
+	box-shadow: 0 0.2rem 0.5rem black;
+}
+
+#strict-btn {
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: #FCD62B;
+	border: 0.2rem solid #424242;
+	border-radius: 50%;
+	margin-top: 7.5rem;
+	margin-left: 3rem;
+	cursor: pointer;
+	box-shadow: 0 0.2rem 0.5rem black;
+}
+
+#strict-btn-display {
+	margin-top: 6.5rem;
+	margin-left: 10.75rem;
+}
+
+#count-label {
+	margin-top: 10rem;
+	margin-left: -5.1rem;
+	font-size: 0.8rem;
+	color: #424242;
+}
+
+#start-btn-label {
+	margin-top: 10rem;
+	margin-left: -1.25rem;
+	font-size: 0.8rem;
+	color: #424242;
+}
+
+#strict-btn-label {
+	margin-top: 10rem;
+	margin-left: 2.4rem;
+	font-size: 0.8rem;
+	color: #424242;
+}
+
+#power-btn-container {
+	background-color: #323232;
+	width: 3rem;
+	height: 1.5rem;
+	margin-top: 11.7rem;
+	margin-left: 5.75rem;
+	border-radius: 0.5rem;
+}
+
+#power-btn {
+	background-color: #4478CD;
+	border: 0.15rem solid #424242;
+	width: 1.5rem;
+	height: 1.5rem;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	margin-left: -1.5rem;
+}
+
+#power-btn-label-off {
+	color: #424242;
+	margin-top: 12rem;
+	margin-left: -3.5rem;
+	font-size: 0.8rem;
+}
+
+#power-btn-label-on {
+	color: #424242;
+	margin-top: 12rem;
+	margin-left: 1.8rem;
+	font-size: 0.8rem;
+}
